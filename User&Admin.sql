@@ -17,3 +17,13 @@ create table Admin(A_name varchar(10), A_password varchar(20), primary key (A_na
 describe Admin;
 insert into Admin values('Admin','admin');
 select * from Admin;
+create table Advertisement(Ad_name varchar(20), 
+                         Ad_phno int, 
+                         G_map varchar(512), 
+                         Pic_res varchar(512), 
+                         Adhar_card varchar(512));
+                     
+alter table Advertisement
+ADD column Ad_address varchar(30) after Ad_name;  
+desc Advertisement;
+                       
